@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="float-container">
+
+        <div class="float-img">
+            <img src="pic.jpg" alt="">
+        </div>
+
+        <div class="float-Survey">
+            <h1 id="title">Restaurant Survey</h1>
+            <p id="description">This is a survey that's aim to improve our services</p>
+            <form action="" id="survey-form">
+                <label for="" id="name-label" class="label">Name</label><br>
+                <input type="text" placeholder="Name" id="name" class="input" required><br>
+                <label for="" id="email-label" class="label">Email</label><br>
+                <input type="email" placeholder="Enter mail" id="email" class="input" required><br>
+                <label for="" id="number-label" class="label">Age</label><br>
+                <input type="number" min="10" max="100" placeholder="How old are you?" id="number" class="input" required><br>
+                <label for="" >What is your favorite food categories of our Restaurant?</label><br>
+                <select name="" id="dropdown" class="input" style="margin-top: 20px;">
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dessert">Dessert</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+                <div class="radio-button">
+                    <p style="margin-top: 10px;">Would you recommand our Restaurant?</p>
+                    <label ><input  name="recommendation" value="Definitely" type="radio" />Definitely</label><br><br>
+                    <label ><input name="recommendation" value="Maybe" type="radio"  />Maybe</label><br><br>
+                    <label ><input name="recommendation" value="NotAtAll" type="radio"  />Not at all</label><br><br>
+                </div>
+
+                <div>
+                    <h4>Select Services that should be improved</h4>
+                    <label><input name="to_improve" value="FoodFreshness" type="checkbox" class="checkboxes" />Food Freshness</label><br><br>
+                    <label><input name="to_improve" value="Quality" type="checkbox" class="checkboxes" />Quality</label><br><br>
+                    <label><input name="recommandation" value="Timing" type="checkbox" class="checkboxes" />Timing</label><br><br>
+                    <label><input name="recommandation" value="Cleanliness" type="checkbox" class="checkboxes" />Cleanliness</label><br><br>
+                    <label><input name="recommandation" value="Hospitality" type="checkbox" class="checkboxes" />Hospitality</label><br><br>
+                    <label><input name="recommandation" value="WaiterPresentation" type="checkbox" class="checkboxes" />Waiter
+                        Presentation</label><br><br>
+                    <label><input name="recommandation" value="InteriorDesign" type="checkbox" class="checkboxes" />Interior Design</label><br><br>
+                    <label><input name="recommandation" value="ExteriorDecoration" type="checkbox" class="checkboxes" />Exterior
+                        Decoration</label><br><br>
+                    <label><input name="recommandation" value="TakeAwayServices" type="checkbox" class="checkboxes" />TakeAway
+                        Services</label><br><br>
+                    <label><input name="recommandation" value="Delivery" type="checkbox" class="checkboxes" />Delivery Services</label><br><br>
+
+                </div>
+
+                <div  id="comment">
+                    <h4>Any comment or suggestion?</h4>
+                    <textarea class="textarea" placeholder="Comment and suggestion are Welcome..." id="w3review" name="w3review" rows="4"
+                        cols="50"></textarea>
+                </div>
+                <i>Thanks for your participation</i>
+                
+                <div>
+                    <button type="submit" id="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+</body>
+
+</html>
